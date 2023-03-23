@@ -1,0 +1,81 @@
+.classwork {
+    position: relative;
+    top: 100px;
+}
+
+.topic-block {
+    width: 100%;
+    margin-top: 20px
+}
+
+.btn-dropdown {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    color: #5f6368;
+}
+
+.btn-dropdown:hover {
+    background-color: transparent;
+}
+
+.btn-dropdown:focus {
+    background-color: transparent;
+}
+
+.btn-btn-create {
+    background-color: rgb(184, 6, 114);
+    width: 120px;
+    color: #fff;
+    padding: 15px 20px;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn-btn-create a {
+    background-color: rgb(184, 6, 114);
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-btn-create span {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    padding-left: 10px;
+}
+
+.assignment-option-block {
+    position: absolute;
+}
+
+.assignment-option {
+    background-color: #fff;
+}
+
+.assignment-option a {
+    color: #5f6368;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    max-width: 15rem;
+    width: 100%;
+}
+
+.assignment-option a:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.assignment-option a i {
+    font-size: 20px;
+    color: rgb(184, 6, 114);
+    padding-right: 10px;
+}

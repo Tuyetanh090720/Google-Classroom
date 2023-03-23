@@ -1,0 +1,50 @@
+<div class="assignment-creation">
+    <div class="assignment-creation-header">
+        <div class="btn-cancel">
+            <a (click)="closeTapAssignmentEdition()"><i class="fa fa-times"></i></a>
+            <div class="title-block">
+                <i class="far fa-file-alt"></i>
+                <span>Assignment</span>
+            </div>
+        </div>
+        <div class="btn-join">
+            <button>Asign</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 col-md-9">
+            <div class="assignment-creation-body">
+                <input type="text" placeholder="Title">
+                <div class="tinymce">
+                    <editor [init]="{
+                  height: 500,
+                  menubar: false,
+                  plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount'
+                  ],
+                  toolbar:
+                    'undo redo | formatselect | bold italic backcolor | \
+                    alignleft aligncenter alignright alignjustify | \
+                    bullist numlist outdent indent | removeformat | help'
+                    }">
+                    </editor>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-3 assignment-creation-option-bar">
+            <div class="option-bar">
+                <label>For</label>
+                <div class="select-block">
+                    <div class="dropdown">
+                        <ng-multiselect-dropdown [settings]="dropdownSettings" [data]="dropdownList">
+                        </ng-multiselect-dropdown>
+                    </div>
+                </div>
+                <label>Points</label>
+                <input type="number" min="0" max="100">
+            </div>
+        </div>
+    </div>
+</div>

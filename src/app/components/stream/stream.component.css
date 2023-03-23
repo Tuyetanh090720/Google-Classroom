@@ -1,0 +1,150 @@
+.stream {
+    position: relative;
+    top: 100px;
+}
+
+.stream .class-information {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.stream .class-information .class-img {
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.stream .class-information img {
+    width: 100%;
+}
+
+.stream .class-information .class-name {
+    position: absolute;
+    z-index: 10;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    color: #fff;
+    top: 200px;
+    padding-left: 30px
+}
+
+.stream .class-information .class-name .span6 {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.375rem !important;
+    font-weight: 400 !important;
+    line-height: 1.75rem;
+    color: #fff;
+}
+
+.stream .class-code-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream .class-code-block .code {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    color: rgb(184, 6, 114);
+    padding: 10px 0;
+}
+
+.stream .announcement-edit-area .announcement-edit-area-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 1px 0 10px -5px #888;
+    border: 1px solid #e0e0e0;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.stream .announcement-edit-area .announcement-edit-area-header .announcement-edit {
+    color: #5f6368;
+    padding-left: 20px;
+    align-items: center;
+    color: rgba(0, 0, 0, .549);
+}
+
+.stream .announcement-edit-area .announcement-edit-area-header .announcement-edit:hover {
+    text-decoration: none;
+    color: rgb(184, 6, 114);
+}
+
+.stream .announcement-edit-area .avatar-author {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+
+.stream .announcement-edit-area .announcement-edit-block {
+    border: 1px solid #e0e0e0;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px
+}
+
+.stream .announcement-edit-area .announcement-edit-block label {
+    letter-spacing: .01785714em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #5f6368;
+}
+
+.select-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dropdown {
+    width: 200px;
+    padding-right: 20px;
+}
+
+.announcement-edit-block .btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 30px
+}
+
+.announcement-edit-block button {
+    outline: 0;
+    border: none;
+    width: 70px;
+    color: #5f6368;
+}
+
+.announcement-edit-block button:hover {
+    background-color: rgba(26, 115, 232, .12);
+}
+
+.announcement-edit-block .btn-post {
+    background-color: rgb(224, 224, 224, 0.4);
+    margin-left: 20px
+}
+
+.announcement-edit-block .btn-post a {
+    color: #5f6368;
+    text-decoration: none;
+}

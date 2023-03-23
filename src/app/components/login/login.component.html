@@ -1,0 +1,42 @@
+<div class="popup-content">
+    <div class="login" *ngIf="!tapRoles">
+        <div class="icon-google">
+            <img src="/assets/images/logo-google.png" alt="Google">
+        </div>
+        <span for="">Use your Google Account</span>
+        <form action="">
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required">
+                <span>Password</span>
+            </div>
+            <div class="btn-block">
+                <div class=" forgot-pasword">
+                    <a>Forgot password</a>
+                </div>
+                <button class="btn btn-submit" (click)="showRoles()">Log in</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="choose-role" *ngIf="tapRoles">
+    <span class="title-role">Pick your role </span>
+    <div class="role-block">
+        <a class="role" (click)="changeRoleTeacher()" [routerLink]="['/class-list']">
+            <div class="img-role">
+                <img src="/assets/images/teacher.png" alt="">
+            </div>
+            <span>Teacher</span>
+        </a>
+        <a class="role" (click)="changeRoleStudent()" [routerLink]="['/class-list']">
+            <div class="img-role">
+                <img src="/assets/images/student.jpg" alt="">
+            </div>
+            <span>Student</span>
+        </a>
+    </div>
+</div>

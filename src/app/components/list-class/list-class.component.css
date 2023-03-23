@@ -1,0 +1,136 @@
+.list-class-content {
+    position: relative;
+    top: 80px;
+    padding: 10px 20px;
+}
+
+.list-class-content .top-tap-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-class-content .top-tap {
+    padding: 10px 10px;
+    color: #1a73e8;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.list-class-content .top-tap:hover {
+    color: #174ea6;
+    background-color: #f6fafe;
+}
+
+.list-class-content .top-tap i {
+    padding-right: 10px;
+}
+
+.list-class-content .list-class .class-block {
+    margin: 30px 30px 0px 0px;
+    width: 300px;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.list-class-content .list-class .class-block:hover {
+    box-shadow: 1px 0 10px -2px #888;
+}
+
+.list-class-content .list-class .class-block .class-block-header {
+    background-color: red;
+    color: white;
+    padding: 20px 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-class-content .list-class .class-block .class-block-header-a {
+    color: white;
+}
+
+.list-class-content .list-class .class-block .class-block-header-a .spanh6 {
+    font-size: 11px;
+}
+
+.list-class-content .list-class .class-block .btn-direct a {
+    color: white;
+    text-decoration: none;
+}
+
+.list-class-content .list-class .class-block .direct-class-block {
+    position: absolute;
+    min-width: 8rem;
+    max-width: 10rem;
+    background-color: white;
+    border: 1 solid #dadce0;
+    box-shadow: 1px 0 10px -2px #888;
+}
+
+.list-class-content .list-class .class-block .direct-class-block .btnn {
+    padding: 20px 20px;
+    max-width: 200px;
+}
+
+.list-class-content .list-class .class-block .direct-class-block .btnn a {
+    color: rgb(32, 33, 36);
+    text-decoration: none;
+}
+
+.list-class-content .list-class .class-block .direct-class-block .btnn:hover {
+    background-color: #e0e0e0;
+}
+
+.list-class-content .list-class .class-block .class-block-body {
+    padding: 20px 20px;
+    height: 170px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.list-class-content .list-class .class-block .class-block-body span {
+    color: rgba(0, 0, 0, .549);
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.list-class-content .list-class .class-block .class-block-body a {
+    color: rgba(0, 0, 0, .87);
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.list-class-content .list-class .class-block .class-block-footer {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.list-class-content .list-class .class-block .class-block-footer .btn {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.list-class-content .list-class .class-block .class-block-footer .btn a {
+    color: rgba(0, 0, 0, .87);
+}
+
+.list-class-content .list-class .class-block .class-block-footer .btn:hover {
+    background-color: #dadce0;
+    border-radius: 30px;
+}
+
+.list-class-content .list-class .class-block .class-block-footer .btn a i {
+    font-size: 18px;
+}

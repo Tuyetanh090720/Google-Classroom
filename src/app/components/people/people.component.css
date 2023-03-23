@@ -1,0 +1,81 @@
+.people {
+    position: relative;
+    top: 100px;
+}
+
+.people-block-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(184, 6, 114);
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(184, 6, 114);
+}
+
+.people-block-header label {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.people-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 30px 20px;
+    width: 100%;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-block span {
+    padding-right: 10px;
+}
+
+.student-block-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 30px 20px;
+}
+
+.student-block-body .btn-check-all {
+    padding: 20px 0;
+}
+
+.student-block-body .btn-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.student-block-body .btn-filter input {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.student-block-body .btn-filter label:focus {
+    border: none !important;
+    outline: 0 !important;
+}
+
+.people-name-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-dropdown {
+    color: #3c4043;
+    border: 1px solid #dadce0;
+}
+
+.btn-dropdown:hover {
+    background-color: #dadce0;
+}

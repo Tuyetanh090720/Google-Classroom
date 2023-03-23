@@ -1,0 +1,68 @@
+<app-header></app-header>
+<section class="stream container-small">
+    <div class="class-information">
+        <div class="class-name">
+            <span>Math</span>
+            <br>
+            <span class="span6 ">Math</span>
+        </div>
+        <div class="class-img">
+            <img src="/assets/images/background.jpg" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="class-code-block" *ngIf="(role == 'teacher')">
+                <span>Class code</span>
+                <span class="code">a5tytqp</span>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9">
+            <div class="announcement-edit-area" id="announcement-edit" role="tablist" aria-multiselectable="true">
+                <a class="announcement-edit-area-header" data-toggle="collapse" href="#collapse1edit" aria-expanded="false" aria-controls="collapse1edit">
+                    <div class="avatar-author">
+                        <img src="/assets/images/avatar.jpg" alt="">
+                    </div>
+                    <div class="announcement-edit">
+                        Announcer something to your class
+                    </div>
+                </a>
+                <div class="announcement-edit-block collapse" id="collapse1edit" data-parent="#announcement-edit">
+                    <label>For</label>
+                    <div class="select-block">
+                        <div class="dropdown">
+                            <ng-multiselect-dropdown [settings]="dropdownSettings" [data]="dropdownList">
+                            </ng-multiselect-dropdown>
+                        </div>
+                        <div class="dropdown">
+                            <ng-multiselect-dropdown [settings]="dropdownSettings" [data]="dropdownList">
+                            </ng-multiselect-dropdown>
+                        </div>
+                    </div>
+                    <div class="tinymce">
+                        <editor [init]="{
+                          height: 500,
+                          menubar: false,
+                          plugins: [
+                            'advlist autolink lists link image charmap print preview anchor',
+                            'searchreplace visualblocks code fullscreen',
+                            'insertdatetime media table paste code help wordcount'
+                          ],
+                          toolbar:
+                            'undo redo | formatselect | bold italic backcolor | \
+                            alignleft aligncenter alignright alignjustify | \
+                            bullist numlist outdent indent | removeformat | help'
+                            }">
+                        </editor>
+                        <div class="btn-block">
+                            <button class="btn btn-cancel">Cancel</button>
+                            <button class="btn btn-post"><a href="">Post</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <app-announcement-assignment></app-announcement-assignment>
+            <app-announcement></app-announcement>
+        </div>
+    </div>
+</section>

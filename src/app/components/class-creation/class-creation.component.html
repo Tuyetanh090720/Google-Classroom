@@ -1,0 +1,37 @@
+<div class="class-creation-area">
+    <div class="popup-content">
+        <div class=" popup-creation-question " *ngIf="popupCreationQuestion ">
+            <div class="popup-creation-question-header ">
+                <span>Using classroom at a school with students?</span>
+            </div>
+            <div class="popup-creation-question-body ">
+                <span>If so, your school must sign up for a Google Workspace for Education account before you can use Classroom. Learn More
+          Google Workspace for Education lets schools decide which Google services their students can use, and provides additional privacy and security protections that are important in a school setting. Students cannot use Google Classroom at a school with personal accounts.</span>
+            </div>
+            <div class="checkbox-block ">
+                <input type="checkbox " [(ngModel)]="showPopupCreation ">
+                <label for=" ">I've read and understand the above notice, and I'm not using Classroom at a school with students</label>
+            </div>
+            <div class="popup-creation-question-footer ">
+                <a (click)="onNoClick() ">Go back</a>
+                <a class="btn-active " *ngIf="showPopupCreation " (click)="showCreation() ">Continue</a>
+                <span class="btn-inactive " *ngIf="!showPopupCreation ">Continue</span>
+            </div>
+        </div>
+        <div class="popup-creation-block " *ngIf="popupCreation ">
+            <div class="popup-creation ">
+                <label for=" ">Create class</label>
+                <form action=" ">
+                    <input type="text " placeholder="Class name (required) ">
+                    <input type="text " placeholder="Section ">
+                    <input type="text " placeholder="Subject ">
+                    <input type="text " placeholder="Room ">
+                </form>
+                <div class="btn-block ">
+                    <button class="btn "><a (click)="onNoClick() ">Cancel</a></button>
+                    <button class="btn btn-create " type="submit ">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

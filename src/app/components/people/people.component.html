@@ -1,0 +1,69 @@
+<app-header></app-header>
+<section class="people container-small">
+    <div class="teacher-block">
+        <div class="people-block-header">
+            <label>Teachers</label>
+            <div class="btn-invite">
+                <i class="fas fa-user-plus"></i>
+            </div>
+        </div>
+        <div class="teacher-block-body">
+            <div class="people-information">
+                <div class="people-name-img">
+                    <div class="author-avatar">
+                        <img src="/assets/images/avatar.jpg" alt="">
+                    </div>
+                    <div class="author-name">
+                        <span>ngoc anh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="student-block" *ngIf="(role == 'teacher')">
+        <div class="people-block-header">
+            <label>Students</label>
+            <div class="right-block">
+                <span>1 student</span>
+                <div class="btn-invite">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+            </div>
+        </div>
+        <div class="student-block-body">
+            <label class="btn-check-all btn-filter ">
+              <input type="checkbox" [(ngModel)]="masterSelected" name="list_name" value="m1" (change)="checkUncheckAll()" />
+              <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                  <button type="button" class="btn btn-outline-primary btn-dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                    Actions
+                  </button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>Email</button>
+                    <button ngbDropdownItem>Remove</button>
+                    <button ngbDropdownItem>Mute</button>
+                  </div>
+                </div>
+              </div>
+            </label>&nbsp;
+            <ng-container *ngFor="let item of checklist">
+                <label class=" btn-filter">
+                  <input type="checkbox" [(ngModel)]="item.isSelected" name="list_name" value="{{item.id}}" (change)="isAllSelected()" />
+                  <div class="people-information">
+                    <div class="people-name-img">
+                      <div class="author-avatar">
+                        <img src="/assets/images/avatar.jpg" alt="">
+                      </div>
+                      <div class="author-name">
+                          <span>{{item.value}}</span>
+                      </div>
+                    </div>
+                    <div class="btn-option-edit">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                </label>&nbsp;
+            </ng-container>
+        </div>
+    </div>
+</section>

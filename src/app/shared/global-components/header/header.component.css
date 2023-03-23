@@ -1,0 +1,248 @@
+.header-bar {
+    width: 100%;
+    background: white;
+    flex-shrink: 0;
+    line-height: 1.7em;
+    position: fixed;
+    top: 0;
+    transform: none;
+    z-index: 986;
+}
+
+.header-bar .header-top-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 20px;
+    border-bottom: 0.0625rem solid #e0e0e0;
+}
+
+.header-bar .header-top-bar .top-left-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.header-bar .header-top-bar .top-left-bar .nav-bar-icon {
+    left: 0;
+    display: block;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    padding: 9px 10px 7px 10px;
+    margin: 2px 2px;
+}
+
+.header-bar .header-top-bar .top-left-bar .nav-bar-icon i {
+    font-size: 20px;
+    color: #5f6368;
+}
+
+.header-bar .header-top-bar .top-left-bar .nav-bar-icon:hover {
+    border-radius: 20px;
+    background-color: rgb(224, 224, 224, 0.4);
+}
+
+.header-bar .header-top-bar .top-left-bar .logo-google {
+    align-items: center;
+    padding-left: 20px
+}
+
+.header-bar .header-top-bar .top-left-bar .logo-google img {
+    width: 40%;
+}
+
+.header-bar .header-top-bar .top-left-bar .logo-google span {
+    color: #5f6368;
+    font-family: "Product Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-size: 1.38125rem;
+    position: relative;
+    top: 2px;
+}
+
+.header-bar .header-top-bar .top-left-bar .class-name-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.header-bar .header-top-bar .top-left-bar .class-name-block .class-block-header-a {
+    color: #5f6368;
+}
+
+.header-bar .header-top-bar .top-left-bar .class-name-block .class-block-header-a .spanh6 {
+    font-size: 11px;
+}
+
+.header-bar .header-top-bar .top-menu-bar {
+    text-align: center;
+}
+
+.header-bar .header-top-bar .top-menu-bar nav ul {
+    margin-bottom: 0 !important;
+}
+
+.header-bar .header-top-bar .top-menu-bar nav ul li {
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: white;
+}
+
+.header-bar .header-top-bar .top-menu-bar nav ul li a.active {
+    border-bottom: rgb(32, 33, 36) solid 2px;
+    background-color: rgb(224, 224, 224, 0.4);
+}
+
+.header-bar .header-top-bar .top-menu-bar nav>ul>li:hover {
+    background-color: rgb(224, 224, 224, 0.4);
+}
+
+.header-bar .header-top-bar .top-menu-bar nav>ul>li>a {
+    align-items: center;
+    display: flex;
+    border-bottom: solid 0.125rem transparent;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(32, 33, 36);
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.header-bar .header-top-bar .top-right-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+}
+
+.header-bar .header-top-bar .top-right-bar .btn {
+    font-size: 20px;
+    font-weight: 100;
+    color: #5f6368;
+    white-space: wrap !important;
+}
+
+.header-bar .header-top-bar .top-right-bar .btn:hover {
+    background-color: #e0e0e0;
+    border-radius: 30px;
+}
+
+.header-bar .header-top-bar .top-right-bar .btn:focus {
+    box-shadow: none !important;
+    outline: 0;
+}
+
+.header-bar .header-top-bar .top-right-bar .popup-create-class {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border: 1px solid #dadce0;
+    box-shadow: 1px 0 10px -2px #888;
+}
+
+.header-bar .header-top-bar .top-right-bar .popup-create-class .btnn {
+    padding: 20px 20px;
+    max-width: 200px;
+}
+
+.header-bar .header-top-bar .top-right-bar .popup-create-class .btnn a {
+    color: rgb(32, 33, 36);
+    text-decoration: none;
+}
+
+.header-bar .header-top-bar .top-right-bar .popup-create-class .btnn:hover {
+    background-color: #e0e0e0;
+}
+
+.header-bar .header-top-bar .top-right-bar .img-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-menu {
+    top: 0;
+    left: 0px;
+    height: 100%;
+    z-index: 1000;
+    background: white;
+    position: fixed;
+    width: 300px;
+    box-shadow: 1px 0 20px -2px #888;
+    padding-top: 10px;
+}
+
+.main-menu .ne-main-menu {
+    text-align: left;
+    margin: auto;
+}
+
+.main-menu .ne-main-menu nav ul li {
+    list-style-type: none;
+    text-align: left;
+    position: relative;
+    margin-right: 30px;
+    display: flex;
+}
+
+.main-menu .ne-main-menu nav ul li:hover {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgba(26, 115, 232, .12);
+}
+
+.main-menu .ne-main-menu nav>ul>li>a {
+    display: block;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(32, 33, 36);
+    text-decoration: none;
+}
+
+.main-menu .ne-main-menu nav>ul>li i {
+    font-size: 18px;
+    color: #5f6368;
+    padding: 25px;
+}
+
+.main-menu .ne-main-menu nav>ul>li .divide {
+    border: 0.5px solid #e0e0e0;
+    width: 100%;
+}
+
+.main-menu .ne-main-menu nav>ul>li .avatar-class-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px;
+}
+
+.main-menu .ne-main-menu nav>ul>li .avatar-class {
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-menu .ne-main-menu nav>ul>li .avatar-class-area span {
+    padding-left: 20px;
+}

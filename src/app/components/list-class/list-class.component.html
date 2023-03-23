@@ -1,0 +1,109 @@
+<app-header></app-header>
+<section class="list-class-content">
+    <div class="top-tap-bar ">
+        <div class="top-tap tap-review">
+            <i class="fa fa-folder-minus"></i>
+            <span>To review</span>
+        </div>
+        <div class="top-tap tap-calendar">
+            <i class="fa fa-calendar"></i>
+            <span>To review</span>
+        </div>
+    </div>
+    <div class="list-class">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="class-block">
+                    <div class="class-block-header">
+                        <a [routerLink]="['/class-detail/:id']" class="class-block-header-a ">
+                            <div class="class-name ">
+                                <span>Math</span>
+                                <br>
+                                <span class="spanh6 ">Math</span>
+                            </div>
+                        </a>
+                        <div class="btn btn-direct " id="accordion" role="tablist" aria-multiselectable="true" (clickOutside)="clickedOutsideTapEdition($event)">
+                            <a class="btn-direct-item" data-toggle="collapse" href="#collapse1te" aria-expanded="false" aria-controls="collapse1te">
+                                <i class="fa fa-ellipsis-v "></i>
+                            </a>
+                            <div class="direct-class-block ">
+                                <div class="btnn collapse collapse1te" id="collapse1te" data-parent="#accordion" *ngIf="(role == 'teacher')">
+                                    <a (click)="openClassEdition()">
+                                      Edit
+                                    </a>
+                                </div>
+                                <div class="btnn collapse collapse1te" id="collapse1te" data-parent="#accordion" *ngIf="(role === 'student')">
+                                    <a (click)="openClassEdition()">
+                                  Unenroll
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class-block-body ">
+                        <span>Due tomorrow</span><br>
+                        <a href=" ">11h59PM-asd</a>
+                    </div>
+                    <div class="class-block-footer ">
+                        <div class="btn btn-open-class ">
+                            <a href=" ">
+                                <i class="fa fa-arrow-up "></i>
+                            </a>
+                        </div>
+                        <div class="btn btn-open-folder ">
+                            <a href=" ">
+                                <i class="fa fa-folder "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="class-block">
+                    <div class="class-block-header">
+                        <a [routerLink]="['/class-detail/:id']" class="class-block-header-a ">
+                            <div class="class-name ">
+                                <span>Math</span>
+                                <br>
+                                <span class="spanh6 ">Math</span>
+                            </div>
+                        </a>
+                        <div class="btn btn-direct " id="accordion" role="tablist" aria-multiselectable="true" (clickOutside)="clickedOutsideTapEdition($event)">
+                            <a class="btn-direct-item" data-toggle="collapse" href="#collapse2te" aria-expanded="false" aria-controls="collapse2te">
+                                <i class="fa fa-ellipsis-v "></i>
+                            </a>
+                            <div class="direct-class-block ">
+                                <div class="btnn collapse collapse2te" id="collapse2te" data-parent="#accordion" *ngIf="(role == 'teacher')">
+                                    <a (click)="openClassEdition()">
+                                      Edit
+                                    </a>
+                                </div>
+                                <div class="btnn collapse collapse2te" id="collapse2te" data-parent="#accordion" *ngIf="(role === 'student')">
+                                    <a (click)="openClassEdition()">
+                                    Unenroll
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class-block-body ">
+                        <span>Due tomorrow</span><br>
+                        <a href=" ">11h59PM-asd</a>
+                    </div>
+                    <div class="class-block-footer ">
+                        <div class="btn btn-open-class ">
+                            <a href=" ">
+                                <i class="fa fa-arrow-up "></i>
+                            </a>
+                        </div>
+                        <div class="btn btn-open-folder ">
+                            <a href=" ">
+                                <i class="fa fa-folder "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

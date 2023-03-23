@@ -1,0 +1,41 @@
+<app-header></app-header>
+<section class="classwork container">
+    <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-12">
+            <div>
+                <div class="col">
+                    <div ngbDropdown class="d-inline-block topic-block">
+                        <button type="button" class="btn btn-dropdown" id="dropdownBasic1" ngbDropdownToggle>
+                          Actions
+                        </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem>Email</button>
+                            <button ngbDropdownItem>Remove</button>
+                            <button ngbDropdownItem>Mute</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="btn-btn-create" id="assigment-option" role="tablist" aria-multiselectable="true" (clickOutside)="clickedOutsideAssignmentOptionBlock($event)" *ngIf="(role == 'teacher')">
+                <a data-toggle="collapse" href="#collapse1ao" aria-expanded="false" aria-controls="collapse1ao">
+                    <i class="fas fa-plus"></i>
+                    <span>Create</span>
+                </a>
+                <div class="assignment-option-block collapse" id="collapse1ao" data-parent="#assigment-option">
+                    <div class="assignment-option" id="assigment-creation" role="tablist" aria-multiselectable="true">
+                        <a [routerLink]="['/class-detail/classwork/:id/creation']" routerLinkActive="active">
+                            <i class="far fa-file-alt"></i>
+                            <span>Assignment</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <app-assignment></app-assignment>
+            <app-assignment></app-assignment>
+            <app-assignment></app-assignment>
+        </div>
+
+    </div>
+</section>

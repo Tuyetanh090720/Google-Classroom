@@ -1,0 +1,132 @@
+<header>
+    <div class="header-bar">
+        <div>
+            <div class="row header-top-bar">
+                <div class="col-lg-3 col-md-3 col-sm-2">
+                    <div class="top-left-bar">
+                        <div class="nav-bar-icon" id="nav-bar-icon" (clickOutside)="clickedOutsideMenu($event)" (click)=" showMainMenu() ">
+                            <a>
+                                <i class="fa fa-bars "></i>
+                            </a>
+                        </div>
+                        <div class="logo-google " *ngIf="!classDetail">
+                            <a href=" ">
+                                <img src="assets/images/logo-google.png " alt="Google ">
+                            </a>
+                            <span>Classroom</span>
+                        </div>
+                        <div class="class-name-block " *ngIf="classDetail">
+                            <a href=" " class="class-block-header-a ">
+                                <div class="class-name ">
+                                    <span>Math</span>
+                                    <br>
+                                    <span class="spanh6 ">Math</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7 ">
+                    <div class="top-menu-bar " *ngIf="classDetail">
+                        <nav class="mean-nav ">
+                            <ul>
+                                <li (click)="setStateAsActive('Stream')">
+                                    <a [class.active]="activeState === 'Stream'" [routerLink]="['/class-detail/:id']">Stream</a>
+                                </li>
+                                <li (click)="setStateAsActive('Classwork')">
+                                    <a [class.active]="activeState === 'Classwork'" [routerLink]="['/class-detail/classwork/:id']">Classwork</a>
+                                </li>
+                                <li (click)="setStateAsActive('People')">
+                                    <a [class.active]="activeState === 'People'" [routerLink]="['/class-detail/people/:id']">People</a>
+                                </li>
+                                <li (click)="setStateAsActive('Grades')">
+                                    <a [class.active]="activeState === 'Grades'" [routerLink]="['/class-detail/grades/:id']" *ngIf="(role == 'teacher')">Grades</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-md-2 col-sm-2 ">
+                    <div class="top-right-bar ">
+                        <div id="creation" role="tablist " aria-multiselectable="true " (clickOutside)="clickedOutsideTapCreation($event) ">
+                            <a class="btn btn-plus " data-toggle="collapse" href="#collapse1tc" data-target="#collapse1tc" aria-expanded="false" aria-controls="collapse1tc">
+                                <i class="fa fa-plus " *ngIf="!classDetail "></i>
+                            </a>
+                            <div class="popup-create-class">
+                                <div class="collapse collapse1tc" id="collapse1tc" data-parent="#creation">
+                                    <div class="btnn " (click)="openClassCreation() " *ngIf="(role == 'teacher')">
+                                        <a>Create class</a>
+                                    </div>
+                                    <div class="btnn " (click)="openClassJoin() ">
+                                        <a>Join class</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn btn-setting " *ngIf="classDetail ">
+                            <i class="fa fa-cog "></i>
+                        </div>
+                        <div class="btn btn-grid ">
+                            <i class="fa fa-th "></i>
+                        </div>
+                        <div class="img-avatar ">
+                            <img src="/assets/images/avatar.jpg " alt="account ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-menu " *ngIf="menu ">
+        <div class="ne-main-menu ">
+            <nav>
+                <ul>
+                    <li>
+                        <a href=" ">
+                            <i class="fa fa-home "></i>
+                            <span>Classes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <i class="fas fa-calendar "></i>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="divide "></div>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <i class="fas fa-folder-minus "></i>
+                            <span>To review</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" " class="avatar-class-area ">
+                            <div class="avatar-class ">
+                                <img src="/assets/images/icon-class.png " alt=" ">
+                            </div>
+                            <span>Math</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="divide "></div>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <i class="fas fa-archive "></i>
+                            <span>Archived classes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" ">
+                            <i class="fa fa-cog "></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

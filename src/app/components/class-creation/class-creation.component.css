@@ -1,0 +1,154 @@
+.popup-creation-question {
+    border: 1px solid #e0e0e0;
+    min-width: 18rem;
+    max-width: 35rem;
+    border-radius: 10px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 0 20px -2px #888;
+}
+
+.popup-creation-question .popup-creation-question-header {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: .1px;
+    line-height: 24px;
+    margin: 18px 24px 16px 24px;
+    min-width: 0;
+    word-wrap: break-word;
+    color: rgba(0, 0, 0, .87);
+}
+
+.popup-creation-question .popup-creation-question-body {
+    margin: 18px 24px 16px 24px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+}
+
+.popup-creation-question .checkbox-block {
+    display: flex;
+    flex-direction: row;
+    margin: 18px 24px 16px 24px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.popup-creation-question .checkbox-block input {
+    margin-right: 20px;
+    transform: scale(1.5);
+}
+
+.popup-creation-question .popup-creation-question-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 18px 24px 16px 24px;
+}
+
+.popup-creation-question .popup-creation-question-footer a {
+    color: #5f6368;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.popup-creation-question .popup-creation-question-footer a:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.popup-creation-question .popup-creation-question-footer .btn-inactive {
+    opacity: 0.5;
+    padding: 10px 10px;
+}
+
+.popup-creation-question .popup-creation-question-footer .btn-active {
+    color: #1a73e8;
+}
+
+.popup-creation-question .popup-creation-question-footer .btn-active:hover {
+    background-color: rgba(66, 133, 244, 0.04);
+}
+
+
+/* popup-creation */
+
+.popup-creation-block {
+    border: 1px solid #e0e0e0;
+    min-width: 18rem;
+    max-width: 35rem;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    z-index: 10000;
+    box-shadow: 1px 0 20px -2px #888;
+}
+
+.popup-creation-block .popup-creation {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: .1px;
+    line-height: 24px;
+    margin: 18px 24px 16px 24px;
+}
+
+.popup-creation-block .popup-creation label {
+    margin-bottom: 20px;
+}
+
+.popup-creation-block .popup-creation input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .549);
+    color: rgba(0, 0, 0, .549);
+    background-color: rgb(241, 243, 244);
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .1px;
+    padding: 15px;
+}
+
+.popup-creation-block .popup-creation input:focus {
+    outline: none;
+}
+
+.popup-creation-block .popup-creation .btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.popup-creation-block .popup-creation .btn-block button {
+    color: #5f6368;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.popup-creation-block .popup-creation .btn-block .btn-create {
+    background-color: rgba(66, 133, 244, 0.04);
+    color: #1a73e8;
+}
+
+.popup-creation-block .popup-creation .btn-block button:hover {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.popup-creation-block .popup-creation .btn-block button a {
+    color: #5f6368;
+    text-decoration: none;
+}

@@ -1,0 +1,195 @@
+.login-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 0 20px -2px #888;
+    z-index: 10000;
+    outline: 0;
+    position: fixed;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-width: 18rem;
+    max-width: 25rem;
+    width: 100%;
+}
+
+.login {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    letter-spacing: .1px;
+    line-height: 24px;
+    margin: 18px 24px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .icon-google {
+    width: 100px;
+    overflow: hidden;
+    margin: 20px 0 10px 0;
+}
+
+.login .icon-google img {
+    width: 100%;
+}
+
+.login form {
+    width: 100%;
+}
+
+.login span {
+    color: #202124;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.login .inputbox {
+    position: relative;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+.login .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    background: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login .inputbox:last-child {
+    margin-bottom: 0;
+}
+
+.login .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+}
+
+.login .inputbox input:focus~span,
+.login .inputbox input:valid~span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+}
+
+.login .inputbox [type="button"] {
+    width: 50%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+}
+
+.login .inputbox:hover [type="button"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+.btn-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.forgot-pasword {
+    color: rgb(26, 115, 232);
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    padding: 10px;
+}
+
+.forgot-pasword:hover {
+    color: rgb(23, 78, 166);
+    background-color: rgb(26, 115, 232, 0.2);
+    border-radius: 5px;
+}
+
+.btn-submit {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: .0107142857em;
+    font-weight: 500;
+    text-transform: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(26, 115, 232, 0.7);
+}
+
+.choose-role {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 0 20px -2px #888;
+    z-index: 10000;
+    outline: 0;
+    position: fixed;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    min-width: 18rem;
+    max-width: 50rem;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.title-role {
+    color: #202124;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+}
+
+.role-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.role-block span {
+    padding-left: 15px;
+    color: #202124;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin-top: 10px
+}
+
+.img-role {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-role img {
+    width: 100%;
+}

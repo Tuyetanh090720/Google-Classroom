@@ -1,0 +1,88 @@
+.class-join {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.class-join .class-join-header {
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    color: #5f6368;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .2px;
+    line-height: 20px;
+}
+
+.class-join .class-join-header a {
+    color: #5f6368;
+}
+
+.class-join .class-join-header a i {
+    padding: 15px;
+}
+
+.class-join .class-join-header i:hover {
+    background-color: rgb(224, 224, 224, 0.4);
+    border-radius: 20px;
+}
+
+.class-join .class-join-header span {
+    padding-left: 10px;
+}
+
+.class-join .class-join-header button {
+    outline: 0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #5f6368;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.class-join .class-join-body {
+    width: 35rem;
+    border: 1px solid #dadce0;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.class-join .class-join-body .class-join-code {
+    display: flex;
+    flex-direction: column;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #3c4043;
+}
+
+.class-join .class-join-body .class-join-code span {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4043;
+    padding-bottom: 20px;
+}
+
+.class-join .class-join-body .class-join-code input {
+    border: 1px solid rgb(60, 64, 67);
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
